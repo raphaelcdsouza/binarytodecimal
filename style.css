@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #392F5A;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+main p {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+main p strong:first-child {
+  color: #EEC643;
+}
+
+main p strong {
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+form div {
+  display: flex;
+}
+
+form div input {
+  height: 55px;
+  width: 180px;
+  border: 0;
+  background: #03002744;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  font-size: 24px;
+  padding: 18px;
+}
+
+form div button {
+  height: 55px;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  width: 120px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #030027;
+}
+
+form span {
+  position: absolute;
+  height: 24px;
+  background: #EE6352;
+  padding: 8px;
+  border-radius: 4px;
+  bottom: -35px;
+  margin-top: 8px;
+  font-size: 14px;
+  display: none;
+}
+
+.input-error {
+  border: 1px solid #EE6352;
+  border-right: 0;
+  box-shadow: 0 0 2px 1px #EE635288;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
