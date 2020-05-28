@@ -22,6 +22,7 @@ function handleSubmit(event) {
     convertText.innerHTML = `O binário <strong>'${inputValue}'</strong> é equivalente ao número <strong>${decimal}</strong>`
 
     button.disabled = true;
+    button.style.cursor = 'not-allowed';
     input.value = '';
   } catch (err) {
     input.classList.add('input-error');
@@ -33,6 +34,7 @@ function handleSubmit(event) {
 function handleKeyUp(event) {
   try {
     button.disabled = true;
+    button.style.cursor = 'not-allowed';
 
     const value = event.target.value;
 
@@ -48,6 +50,7 @@ function handleKeyUp(event) {
     }
 
     button.disabled = false;
+    button.style.cursor = 'pointer';
   } catch (err) {
     this.classList.add('input-error');
     errorSpan.classList.add('error');

@@ -83,6 +83,7 @@ form div button {
   font-size: 18px;
   font-weight: 700;
   color: #030027;
+  cursor: not-allowed;
 }
 
 form span {
