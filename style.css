@@ -35,6 +35,8 @@ main {
 main h1 {
   font-size: 40px;
   margin-bottom: 30px;
+  letter-spacing: 10px;
+  font-weight: 700;
 }
 
 main p {
